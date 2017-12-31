@@ -1,0 +1,14 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My map in template</title>
+</head>
+   <body>
+   <ul>
+    {{range $key, $value := .}}
+    <li>{{$key}} = {{$value}}</li>
+    {{end}}
+    </ul>
+    </body>
+</html>

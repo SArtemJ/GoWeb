@@ -1,0 +1,14 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My slice in template</title>
+</head>
+   <body>
+   <ul>
+    {{range $index, $value := .}}
+    <li>{{$index}} - {{$value}}</li>
+    {{end}}
+    </ul>
+    </body>
+</html>
