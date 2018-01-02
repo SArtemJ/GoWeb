@@ -1,0 +1,22 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My struct in template</title>
+</head>
+   <body>
+
+<ul>
+   {{range .Users}}
+    <li>{{.Name}} = {{.Age}}</li>
+    {{end}}
+    </ul>
+
+    <ul>
+       {{range .Pets}}
+        <li>{{.TypePET}}</li>
+        {{end}}
+        </ul>
+
+    </body>
+</html>
