@@ -12,6 +12,7 @@ func main()  {
 	if err != nil {
 		log.Fatalln(err)
 	}
+
 	err = tpl.Execute(os.Stdout, nil)
 	if err != nil {
 		log.Fatalln(err)

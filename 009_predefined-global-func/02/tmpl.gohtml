@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> predef global func - and</title>
+</head>
+<body>
+
+example #1
+    {{range .}}
+        {{.}}
+    {{end}}
+
+example #2
+    {{if .}}
+        example #2 - {{.}}
+    {{end}}
+
+
+example #3
+    {{range .}}
+        {{if .Name}}
+            example #3 - {{.Name}}
+        {{end}}
+    {{end}}
+
+example #4
+    {{range .}}
+        {{if and .Name .Admin}}
+            example #4 - Name: {{.Name}}
+            example #4 - SecondName: {{.SecondName}}
+            example #4 - Admin: {{.Admin}}
+        {{end}}
+    {{end}}
+
+</body>
+</html>
+
