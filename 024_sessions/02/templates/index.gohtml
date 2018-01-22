@@ -1,25 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title> Index page</title>
-
+    <meta charset="UTF-8">
+    <title>Main page</title>
 </head>
 <body>
 
-    <form method="post">
-        <input type="email" name="umail"><br>
-        <input type="text" name="fname"><br>
-        <input type="text" name="lname"><br>
-    </form>
+<form method="post">
 
-{{if .First}}
-user mail {{.UserMail}}<br>
-first name {{.FName}}<br>
-last name {{.LName}}<br>
+    <input type="email" name="umail" placeholder="email"><br>
+    <input type="text" name="fname" placeholder="first name"><br>
+    <input type="text" name="lname" placeholder="last name"><br>
+    <input type="submit">
+
+</form>
+
+
+{{if .Fname}}
+USER NAME {{.UserMail}}<br>
+FIRST {{.Fname}}<br>
+LAST {{.Lname}}<br>
 {{end}}
 
 <br>
-<h2> Go to <a href="/secindPAge"> page </a> </h2>
+<h2>Go to <a href="/secondPage">the bar</a></h2>
 </body>
 </html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Second page</title>
+</head>
+<body>
+
+<h1>Info about user from session</h1>
+
+{{if .Fname}}
+    USER NAME {{.UserMail}}<br>
+    FIRST {{.Fname}}<br>
+    LAST {{.Lname}}<br>
+{{end}}
+
+</body>
+</html>
