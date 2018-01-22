@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Index page</title>
+
+</head>
+<body>
+
+    <form method="post">
+        <input type="email" name="umail"><br>
+        <input type="text" name="fname"><br>
+        <input type="text" name="lname"><br>
+    </form>
+
+{{if .First}}
+user mail {{.UserMail}}<br>
+first name {{.FName}}<br>
+last name {{.LName}}<br>
+{{end}}
+
+<br>
+<h2> Go to <a href="/secindPAge"> page </a> </h2>
+</body>
+</html>
