@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	li, err := net.Listen("tcp", ":8080")
+	li, err := net.Listen("tcp", ":8081")
 	if err != nil {
 		log.Panic(err)
 	}
@@ -21,8 +21,8 @@ func main() {
 		}
 
 		io.WriteString(conn, "\nHello from TCP server\n")
-		fmt.Fprintln(conn, "How is your day")
-		fmt.Fprintf(conn, "%v", "Well, I hope")
+		fmt.Fprintf(conn, "How is your day\n")
+		fmt.Fprintf(conn, "%v", "Well, I hope\n")
 
 		conn.Close()
 	}
