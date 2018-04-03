@@ -27,8 +27,11 @@ func main() {
 func funcT(w http.ResponseWriter, r *http.Request) {
 
 	fName := r.FormValue("firstName")
+	log.Println(fName)
 	sName := r.FormValue("secondName")
+	log.Println(sName)
 	sV := r.FormValue("subscribeValue") == "on"
+	log.Println(sV)
 
 	err := tmpl.ExecuteTemplate(w, "index.gohtml", person{fName, sName, sV})
 	if err != nil {
