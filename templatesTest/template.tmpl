@@ -1,0 +1,19 @@
+<html>
+<body>
+{{if eq .Lang "en"}}
+<form action="do" method="POST">
+Username: <input type="text" name="username"/><br/>
+Password: <input type="password" name="password"/><br/>
+<input type="submit"/>
+</form>
+{{end}}
+{{if eq .Lang "ru"}}
+<form action="asd" method="POST">
+Имя пользователя: <input type="text" name="username"/><br/>
+Пароль: <input type="password" name="password"/><br/>
+<input type="submit"/>
+</form>
+{{end}}
+
+</body>
+</html>
